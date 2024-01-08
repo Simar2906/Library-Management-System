@@ -1,0 +1,12 @@
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\obj\Debug\LibrarySystem.csproj.AssemblyReference.cache
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\EntityFramework.dll
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\EntityFramework.xml
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Training Resources\Week C#\Assignments\Library Management System\LibrarySystem\obj\Debug\LibrarySystem.csproj.CopyComplete

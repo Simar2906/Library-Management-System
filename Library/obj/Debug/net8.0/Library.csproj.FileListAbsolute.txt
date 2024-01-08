@@ -1,0 +1,14 @@
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.AssemblyInfoInputs.cache
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.AssemblyInfo.cs
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.csproj.CoreCompileInputs.cache
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\bin\Debug\net8.0\Library.exe
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\bin\Debug\net8.0\Library.deps.json
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\bin\Debug\net8.0\Library.runtimeconfig.json
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\bin\Debug\net8.0\Library.dll
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\bin\Debug\net8.0\Library.pdb
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.dll
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\refint\Library.dll
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.pdb
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\Library.genruntimeconfig.cache
+C:\Training Resources\Week C#\Assignments\Library Management System\Library\obj\Debug\net8.0\ref\Library.dll

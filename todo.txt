@@ -1,0 +1,65 @@
+Writing Applications in C# and .NET:✔
+Create a new C# console application for the Library Management System.
+
+Types of Data and Expressions:.✔
+Define appropriate data types for representing a Book and a Library.
+
+C# Language Constructs:✔
+Implement the main menu with options for adding a book, viewing available books, borrowing a book, and returning a book.
+
+Methods:✔
+Create a method to add a new book to the library.
+
+Method Overloading:✔
+Implement an overloaded method to handle different scenarios for adding a book (e.g., with or without specifying the author).
+
+Exception Handling:✔
+Add exception handling to handle cases where incorrect inputs are provided during book addition.
+
+Monitoring:✔
+Implement a basic monitoring mechanism that logs each book addition to a file.
+
+Structs:
+Define a Date struct to represent the due date for borrowed books.
+
+Enums:✔
+Create an enum BookGenre to categorize books into genres.
+
+Built-in Collections:✔
+Use a List<Book> to manage the collection of books in the library.
+
+Events:
+Implement an event to notify when a book is borrowed or returned.
+
+Creating Classes:✔
+Create classes for Book and Library.
+
+Interfaces:✔
+Implement an interface, e.g., IBorrowable, to define methods for borrowing and returning books.
+
+Understanding Generics in C#:✔
+Utilize a generic collection (e.g., List<T>) to store books in the library.
+
+Hierarchies of Classes:✔
+Implement a base class Item and derive classes Book and Magazine from it.
+
+Polymorphism:✔
+Use polymorphism to handle borrowing and returning for different types of items.
+
+Extending Classes:✔
+Add additional properties/methods to the Book class, such as Author and DisplayInfo().
+
+File I/O:✔
+Implement functionality to save and load the library's state to/from a file.
+
+Serialization and Deserialization:✔
+Serialize and deserialize the library object to/from a binary file.
+
+Streams:✔
+Use streams to read and write data when saving/loading the library to/from a file.
+
+Entity Framework:✔
+Optional: Implement a simple database using Entity Framework to persist library data.
+
+LINQ:✔
+Use LINQ to filter and display books of a specific genre.

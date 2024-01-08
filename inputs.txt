@@ -1,0 +1,16 @@
+Simar
+2906
+1
+1
+Harry Potter
+JK Rowling
+
+CREATE TABLE Users(UserIdentifier INT PRIMARY KEY IDENTITY(1, 1), Name VARCHAR(200), LibraryId INT);
+SELECT * FROM Users;
+DELETE FROM Users WHERE LibraryId = 2906;
+CREATE TABLE Books(BookId INT IDENTITY(1,1), Name VARCHAR(200), Publisher VARCHAR(200), Author VARCHAR(200), Genre VARCHAR(200), IssuedTo INT, PRIMARY KEY(BookId),FOREIGN KEY(IssuedTo) REFERENCES Users(UserIdentifier));
+CREATE TABLE Magazines(MagazineId INT IDENTITY(1,1), Name VARCHAR(200), Publisher VARCHAR(200), Brand VARCHAR(200), IssuedTo INT, PRIMARY KEY(MagazineId),FOREIGN KEY(IssuedTo) REFERENCES Users(UserIdentifier));
+DROP TABLE Book;
+
+select * from Users
+inner join Books on Users.UserIdentifier = Books.IssuedTo;

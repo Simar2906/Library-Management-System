@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookId" />
+    </Key>
+    <Property Name="BookId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Publisher" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Author" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Genre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedTo" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Books__IssuedTo__440B1D61" FromRole="Books" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Magazine">
+    <Key>
+      <PropertyRef Name="MagazineId" />
+    </Key>
+    <Property Name="MagazineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Publisher" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Brand" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedTo" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Magazines__Issue__412EB0B6" FromRole="Magazines" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserIdentifier" />
+    </Key>
+    <Property Name="UserIdentifier" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LibraryId" Type="Int32" />
+    <NavigationProperty Name="Books" Relationship="Self.FK__Books__IssuedTo__440B1D61" FromRole="Users" ToRole="Books" />
+    <NavigationProperty Name="Magazines" Relationship="Self.FK__Magazines__Issue__412EB0B6" FromRole="Users" ToRole="Magazines" />
+  </EntityType>
+  <Association Name="FK__Books__IssuedTo__440B1D61">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserIdentifier" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="IssuedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Magazines__Issue__412EB0B6">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Magazines" Type="Self.Magazine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserIdentifier" />
+      </Principal>
+      <Dependent Role="Magazines">
+        <PropertyRef Name="IssuedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Library_Management_SystemEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Magazines" EntityType="Self.Magazine" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__Books__IssuedTo__440B1D61" Association="Self.FK__Books__IssuedTo__440B1D61">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Magazines__Issue__412EB0B6" Association="Self.FK__Magazines__Issue__412EB0B6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Magazines" EntitySet="Magazines" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
